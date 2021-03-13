@@ -1,0 +1,9 @@
+{% extends 'posts_show.html' %}
+{% block content %}
+    <div class="post-entry">
+    {% for post in  post_list %}
+        <h1>{{ post.title }}</h1>
+        <h2>{{ post.body }}</h2>
+    {% endfor %}
+    </div>
+{% endblock content %}
